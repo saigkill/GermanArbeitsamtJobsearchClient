@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>Assets\Arbeitsamt.ico</ApplicationIcon>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>C:\Users\sascha\Nextcloud\Keys\sign-assembly\publicKey.snk</AssemblyOriginatorKeyFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>Saigkill.$(AssemblyName)</PackageId>
+    <Title>Api Implement for German Arbeitsamt</Title>
+    <Description>1.0 Initial version</Description>
+    <Copyright>(2025) Sascha Manns</Copyright>
+    <PackageProjectUrl>https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient</PackageProjectUrl>
+    <PackageIcon>Arbeitsamt.png</PackageIcon>
+    <RepositoryUrl>https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient</RepositoryUrl>
+    <PackageTags>api</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\Arbeitsamt.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Nextcloud\source\repos\VisualStudioProjects\Private\GermanArbeitsamtJobsearchClient\GermanArbeitsamtJobsearchClient\Assets\Arbeitsamt.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\..\..\..\Nextcloud\source\repos\VisualStudioProjects\Private\GermanArbeitsamtJobsearchClient\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RestSharp" Version="112.1.0" />
+  </ItemGroup>
+
+</Project>
