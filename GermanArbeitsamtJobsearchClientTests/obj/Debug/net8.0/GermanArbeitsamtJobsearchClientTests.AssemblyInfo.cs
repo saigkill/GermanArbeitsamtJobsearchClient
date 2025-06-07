@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GermanArbeitsamtJobsearchClientTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+206b5d5b43dada922fd74bb3c87894e4a1c2b36b")]
 [assembly: System.Reflection.AssemblyProductAttribute("GermanArbeitsamtJobsearchClientTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GermanArbeitsamtJobsearchClientTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

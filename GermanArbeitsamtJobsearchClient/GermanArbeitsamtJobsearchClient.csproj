@@ -7,12 +7,12 @@
     <ApplicationIcon>Assets\Arbeitsamt.ico</ApplicationIcon>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>C:\Users\sascha\Nextcloud\Keys\sign-assembly\publicKey.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>keyPair.snk</AssemblyOriginatorKeyFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>Saigkill.$(AssemblyName)</PackageId>
     <Title>Api Implement for German Arbeitsamt</Title>
     <Description>1.0 Initial version</Description>
-    <Copyright>(2025) Sascha Manns</Copyright>
+    <Copyright>(c) 2025 Sascha Manns</Copyright>
     <PackageProjectUrl>https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient</PackageProjectUrl>
     <PackageIcon>Arbeitsamt.png</PackageIcon>
     <RepositoryUrl>https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient</RepositoryUrl>
