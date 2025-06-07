@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sascha\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClientTests\\GermanArbeitsamtJobsearchClientTests.csproj": {}
+    "C:\\Users\\sascha\\Nextcloud\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClientTests\\GermanArbeitsamtJobsearchClientTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sascha\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClientTests\\GermanArbeitsamtJobsearchClientTests.csproj": {
+    "C:\\Users\\sascha\\Nextcloud\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClientTests\\GermanArbeitsamtJobsearchClientTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sascha\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClientTests\\GermanArbeitsamtJobsearchClientTests.csproj",
+        "projectUniqueName": "C:\\Users\\sascha\\Nextcloud\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClientTests\\GermanArbeitsamtJobsearchClientTests.csproj",
         "projectName": "GermanArbeitsamtJobsearchClientTests",
-        "projectPath": "C:\\Users\\sascha\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClientTests\\GermanArbeitsamtJobsearchClientTests.csproj",
+        "projectPath": "C:\\Users\\sascha\\Nextcloud\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClientTests\\GermanArbeitsamtJobsearchClientTests.csproj",
         "packagesPath": "C:\\Users\\sascha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sascha\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClientTests\\obj\\",
+        "outputPath": "C:\\Users\\sascha\\Nextcloud\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClientTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -35,8 +35,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\sascha\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient.csproj": {
-                "projectPath": "C:\\Users\\sascha\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient.csproj"
+              "C:\\Users\\sascha\\Nextcloud\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient.csproj": {
+                "projectPath": "C:\\Users\\sascha\\Nextcloud\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient.csproj"
               }
             }
           }
@@ -104,14 +104,14 @@
         }
       }
     },
-    "C:\\Users\\sascha\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient.csproj": {
+    "C:\\Users\\sascha\\Nextcloud\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sascha\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient.csproj",
+        "projectUniqueName": "C:\\Users\\sascha\\Nextcloud\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient.csproj",
         "projectName": "Saigkill.GermanArbeitsamtJobsearchClient",
-        "projectPath": "C:\\Users\\sascha\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient.csproj",
+        "projectPath": "C:\\Users\\sascha\\Nextcloud\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient.csproj",
         "packagesPath": "C:\\Users\\sascha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sascha\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient\\obj\\",
+        "outputPath": "C:\\Users\\sascha\\Nextcloud\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

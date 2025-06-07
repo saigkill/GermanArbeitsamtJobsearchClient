@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SYtuwlBrAhM=",
+  "dgSpecHash": "jT6uX1OyW9w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\sascha\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClientTests\\GermanArbeitsamtJobsearchClientTests.csproj",
+  "projectFilePath": "C:\\Users\\sascha\\Nextcloud\\source\\repos\\VisualStudioProjects\\Private\\GermanArbeitsamtJobsearchClient\\GermanArbeitsamtJobsearchClientTests\\GermanArbeitsamtJobsearchClientTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sascha\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\sascha\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
