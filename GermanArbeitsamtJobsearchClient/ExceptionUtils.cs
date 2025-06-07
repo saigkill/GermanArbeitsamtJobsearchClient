@@ -19,8 +19,16 @@
 
 namespace GermanArbeitsamtJobsearchClient;
 
+/// <summary>
+/// Class ExceptionUtils.
+/// </summary>
 public static class ExceptionUtils
 {
+  /// <summary>
+  /// Renders the path.
+  /// </summary>
+  /// <param name="pathToItem">The path to item.</param>
+  /// <returns>System.String.</returns>
   public static string RenderPath(IList<object> pathToItem)
   {
     var result = "";

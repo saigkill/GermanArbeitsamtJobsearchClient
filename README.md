@@ -17,8 +17,8 @@ GermanArbeitsamtJobsearchClient is released under the MIT License, see the file 
 | What | Status |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Code quality | [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=saigkill_GermanArbeitsamtJobsearchClient&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=saigkill_GermanArbeitsamtJobsearchClient) |
-|Continuous integration Dev | [![Build status](https://dev.azure.com/saigkill/JobApplicationManager/_apis/build/status/JobApplicationManager-ASP.NET-CI-Stage)](https://dev.azure.com/saigkill/JobApplicationManager/_build/latest?definitionId=69) |
-|Continuous integration Prod | [![Build status](https://dev.azure.com/saigkill/JobApplicationManager/_apis/build/status/JobApplicationManager-ASP.NET-CI-prod)](https://dev.azure.com/saigkill/JobApplicationManager/_build/latest?definitionId=70) |
+|Continuous integration Dev | [![Build status](https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient/_apis/build/status/GermanArbeitsamtJobsearchClient-.NET%20Desktop-CI-stage)](https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient/_build/latest?definitionId=72) |
+|Continuous integration Prod | [![Build status](https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient/_apis/build/status/GermanArbeitsamtJobsearchClient-ASP.NET-CI-prod)](https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient/_build/latest?definitionId=-1) |
 |Open Issues Github | ![GitHub issues](https://img.shields.io/github/issues/saigkill/GermanArbeitsamtJobsearchClient) |
 |Open Issues Azure | [![Board Status](https://dev.azure.com/saigkill/89fe1d4e-90f8-4c34-85af-3e743770fa37/5415414b-f4bb-4147-bf8f-6bc4138a8661/_apis/work/boardbadge/0186270a-5a5a-4947-9d4b-6f612fe34f0f)](https://dev.azure.com/saigkill/89fe1d4e-90f8-4c34-85af-3e743770fa37/_boards/board/t/5415414b-f4bb-4147-bf8f-6bc4138a8661/Stories/)|
 
