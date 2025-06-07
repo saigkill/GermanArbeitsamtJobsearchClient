@@ -1,4 +1,4 @@
-﻿// <copyright file="Exceptions.cs" company="Sascha Manns">
+﻿// <copyright file="OpenApiException.cs" company="Sascha Manns">
 // Copyright (c) 2025 Sascha Manns.
 // Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
 // associated documentation files (the “Software”), to deal in the Software without restriction, including
