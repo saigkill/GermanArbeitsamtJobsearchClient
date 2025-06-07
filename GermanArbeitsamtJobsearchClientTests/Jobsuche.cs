@@ -19,23 +19,33 @@
 
 using GermanArbeitsamtJobsearchClient.Models;
 
-using GermanArbeitsamtJobsearchClientTests;
-
 using RestSharp;
 
 // Angepasste Jobsuche-Klasse für Testbarkeit
-namespace GermanArbeitsamtJobsearchClient
+namespace GermanArbeitsamtJobsearchClientTests
 {
+  /// <summary>
+  /// Class Jobsuche.
+  /// </summary>
   public class Jobsuche
   {
     private readonly IApiRequestWrapper _apiRequest;
     private string _endpoint = "/pc/v4/jobsuche";
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Jobsuche"/> class.
+    /// </summary>
+    /// <param name="apiRequest">The API request.</param>
     public Jobsuche(IApiRequestWrapper apiRequest)
     {
       _apiRequest = apiRequest;
     }
 
+    /// <summary>
+    /// Send request as an asynchronous operation.
+    /// </summary>
+    /// <param name="model">The model.</param>
+    /// <returns>A Task&lt;JobSearchResponse&gt; representing the asynchronous operation.</returns>
     public async Task<JobSearchResponse> SendRequestAsync(JobSearchRequest model)
     {
       var parameters = new Dictionary<string, string>

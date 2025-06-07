@@ -21,6 +21,9 @@ using RestSharp;
 
 namespace GermanArbeitsamtJobsearchClient;
 
+/// <summary>
+/// Class ApiRequest. Used as main class for sending.
+/// </summary>
 public static class ApiRequest
 {
   private static string _baseUrl = "https://rest.arbeitsagentur.de/jobboerse/jobsuche-service";
@@ -29,11 +32,11 @@ public static class ApiRequest
   /// <summary>
   /// Sendet einen API-Request mit RestSharp.
   /// </summary>
-  /// <typeparam name="TResponse">Der erwartete Response-Typ.</typeparam>
-  /// <param name="resource">Der API-Endpunkt (z.B. "/stellenangebote").</param>
-  /// <param name="method">HTTP-Methode (GET, POST, etc.).</param>
-  /// <param name="parameters">Optionale Query-Parameter.</param>
-  /// <returns>Deserialisiertes Response-Objekt vom Typ TResponse.</returns>
+  /// <typeparam name="TResponse">Expected Response-Type.</typeparam>
+  /// <param name="resource">The API-Endpoint (z.B. "/stellenangebote").</param>
+  /// <param name="method">HTTP-Method (GET, POST, etc.).</param>
+  /// <param name="parameters">The serialized JobSearchRequest data.</param>
+  /// <returns>Deserialized response object of type TResponse.</returns>
   public static async Task<TResponse?> SendAsync<TResponse>(
     string resource,
     Method method,

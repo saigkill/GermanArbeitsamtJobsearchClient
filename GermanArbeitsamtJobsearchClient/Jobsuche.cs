@@ -23,10 +23,21 @@ using RestSharp;
 
 namespace GermanArbeitsamtJobsearchClient;
 
+/// <summary>
+/// Class Jobsuche.
+/// </summary>
 public class Jobsuche
 {
+  /// <summary>
+  /// The endpoint
+  /// </summary>
   private string _endpoint = "/pc/v4/jobsuche";
 
+  /// <summary>
+  /// Send request as an asynchronous operation.
+  /// </summary>
+  /// <param name="model">The model.</param>
+  /// <returns>A Task&lt;JobSearchResponse&gt; representing the asynchronous operation.</returns>
   public async Task<JobSearchResponse> SendRequestAsync(JobSearchRequest model)
   {
 

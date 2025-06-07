@@ -24,8 +24,22 @@ namespace GermanArbeitsamtJobsearchClient;
 /// </summary>
 public class OpenApiException : Exception
 {
+  /// <summary>
+  /// Initializes a new instance of the <see cref="OpenApiException"/> class.
+  /// </summary>
   public OpenApiException() { }
+
+  /// <summary>
+  /// Initializes a new instance of the <see cref="OpenApiException"/> class.
+  /// </summary>
+  /// <param name="message">The message that describes the error.</param>
   public OpenApiException(string message) : base(message) { }
+
+  /// <summary>
+  /// Initializes a new instance of the <see cref="OpenApiException"/> class.
+  /// </summary>
+  /// <param name="message">The message.</param>
+  /// <param name="inner">The inner.</param>
   public OpenApiException(string message, Exception inner) : base(message, inner) { }
 }
 
@@ -34,10 +48,31 @@ public class OpenApiException : Exception
 /// </summary>
 public class ApiTypeError : OpenApiException
 {
+  /// <summary>
+  /// Gets the path to item.
+  /// </summary>
+  /// <value>The path to item.</value>
   public IList<object>? PathToItem { get; }
+
+  /// <summary>
+  /// Gets the valid classes.
+  /// </summary>
+  /// <value>The valid classes.</value>
   public Type[]? ValidClasses { get; }
+
+  /// <summary>
+  /// Gets a value indicating whether [key type].
+  /// </summary>
+  /// <value><c>null</c> if [key type] contains no value, <c>true</c> if [key type]; otherwise, <c>false</c>.</value>
   public bool? KeyType { get; }
 
+  /// <summary>
+  /// Initializes a new instance of the <see cref="ApiTypeError"/> class.
+  /// </summary>
+  /// <param name="message">The message.</param>
+  /// <param name="pathToItem">The path to item.</param>
+  /// <param name="validClasses">The valid classes.</param>
+  /// <param name="keyType">if set to <c>true</c> [key type].</param>
   public ApiTypeError(string message, IList<object>? pathToItem = null, Type[]? validClasses = null, bool? keyType = null)
       : base(FormatMessage(message, pathToItem))
   {
@@ -46,6 +81,12 @@ public class ApiTypeError : OpenApiException
     KeyType = keyType;
   }
 
+  /// <summary>
+  /// Formats the message.
+  /// </summary>
+  /// <param name="message">The message.</param>
+  /// <param name="pathToItem">The path to item.</param>
+  /// <returns>System.String.</returns>
   private static string FormatMessage(string message, IList<object>? pathToItem)
   {
     if (pathToItem != null && pathToItem.Count > 0)
@@ -59,14 +100,29 @@ public class ApiTypeError : OpenApiException
 /// </summary>
 public class ApiValueError : OpenApiException
 {
+  /// <summary>
+  /// Gets the path to item.
+  /// </summary>
+  /// <value>The path to item.</value>
   public IList<object>? PathToItem { get; }
 
+  /// <summary>
+  /// Initializes a new instance of the <see cref="ApiValueError"/> class.
+  /// </summary>
+  /// <param name="message">The message.</param>
+  /// <param name="pathToItem">The path to item.</param>
   public ApiValueError(string message, IList<object>? pathToItem = null)
       : base(FormatMessage(message, pathToItem))
   {
     PathToItem = pathToItem;
   }
 
+  /// <summary>
+  /// Formats the message.
+  /// </summary>
+  /// <param name="message">The message.</param>
+  /// <param name="pathToItem">The path to item.</param>
+  /// <returns>System.String.</returns>
   private static string FormatMessage(string message, IList<object>? pathToItem)
   {
     if (pathToItem != null && pathToItem.Count > 0)
@@ -80,14 +136,29 @@ public class ApiValueError : OpenApiException
 /// </summary>
 public class ApiAttributeError : OpenApiException
 {
+  /// <summary>
+  /// Gets the path to item.
+  /// </summary>
+  /// <value>The path to item.</value>
   public IList<object>? PathToItem { get; }
 
+  /// <summary>
+  /// Initializes a new instance of the <see cref="ApiAttributeError"/> class.
+  /// </summary>
+  /// <param name="message">The message.</param>
+  /// <param name="pathToItem">The path to item.</param>
   public ApiAttributeError(string message, IList<object>? pathToItem = null)
       : base(FormatMessage(message, pathToItem))
   {
     PathToItem = pathToItem;
   }
 
+  /// <summary>
+  /// Formats the message.
+  /// </summary>
+  /// <param name="message">The message.</param>
+  /// <param name="pathToItem">The path to item.</param>
+  /// <returns>System.String.</returns>
   private static string FormatMessage(string message, IList<object>? pathToItem)
   {
     if (pathToItem != null && pathToItem.Count > 0)
@@ -101,13 +172,29 @@ public class ApiAttributeError : OpenApiException
 /// </summary>
 public class ApiKeyError : OpenApiException
 {
+  /// <summary>
+  /// Gets the path to item.
+  /// </summary>
+  /// <value>The path to item.</value>
   public IList<object>? PathToItem { get; }
 
+  /// <summary>
+  /// Initializes a new instance of the <see cref="ApiKeyError"/> class.
+  /// </summary>
+  /// <param name="message">The message.</param>
+  /// <param name="pathToItem">The path to item.</param>
   public ApiKeyError(string message, IList<object>? pathToItem = null)
       : base(FormatMessage(message, pathToItem))
   {
     PathToItem = pathToItem;
   }
+
+  /// <summary>
+  /// Formats the message.
+  /// </summary>
+  /// <param name="message">The message.</param>
+  /// <param name="pathToItem">The path to item.</param>
+  /// <returns>System.String.</returns>
 
   private static string FormatMessage(string message, IList<object>? pathToItem)
   {
@@ -122,11 +209,36 @@ public class ApiKeyError : OpenApiException
 /// </summary>
 public class ApiException : OpenApiException
 {
+  /// <summary>
+  /// Gets the status.
+  /// </summary>
+  /// <value>The status.</value>
   public int? Status { get; }
+
+  /// <summary>
+  /// Gets the reason.
+  /// </summary>
+  /// <value>The reason.</value>
   public string? Reason { get; }
+
+  /// <summary>
+  /// Gets the body.
+  /// </summary>
+  /// <value>The body.</value>
   public string? Body { get; }
+
+  /// <summary>
+  /// Gets the headers.
+  /// </summary>
+  /// <value>The headers.</value>
   public IDictionary<string, IEnumerable<string>>? Headers { get; }
 
+  /// <summary>
+  /// Initializes a new instance of the <see cref="ApiException"/> class.
+  /// </summary>
+  /// <param name="status">The status.</param>
+  /// <param name="reason">The reason.</param>
+  /// <param name="httpResp">The HTTP resp.</param>
   public ApiException(int? status = null, string? reason = null, HttpResponseMessage? httpResp = null)
       : base(BuildMessage(status, reason, httpResp))
   {
@@ -146,6 +258,13 @@ public class ApiException : OpenApiException
     }
   }
 
+  /// <summary>
+  /// Builds the message.
+  /// </summary>
+  /// <param name="status">The status.</param>
+  /// <param name="reason">The reason.</param>
+  /// <param name="httpResp">The HTTP resp.</param>
+  /// <returns>System.String.</returns>
   private static string BuildMessage(int? status, string? reason, HttpResponseMessage? httpResp)
   {
     var msg = $"Status Code: {status}\nReason: {reason}\n";
@@ -159,29 +278,77 @@ public class ApiException : OpenApiException
     return msg;
   }
 
+  /// <summary>
+  /// Returns a <see cref="System.String" /> that represents this instance.
+  /// </summary>
+  /// <returns>A <see cref="System.String" /> that represents this instance.</returns>
   public override string ToString() => Message;
 }
 
+/// <summary>
+/// Class NotFoundException.
+/// Implements the <see cref="GermanArbeitsamtJobsearchClient.ApiException" />
+/// </summary>
+/// <seealso cref="GermanArbeitsamtJobsearchClient.ApiException" />
 public class NotFoundException : ApiException
 {
+  /// <summary>
+  /// Initializes a new instance of the <see cref="NotFoundException"/> class.
+  /// </summary>
+  /// <param name="status">The status.</param>
+  /// <param name="reason">The reason.</param>
+  /// <param name="httpResp">The HTTP resp.</param>
   public NotFoundException(int? status = null, string? reason = null, HttpResponseMessage? httpResp = null)
       : base(status, reason, httpResp) { }
 }
 
+/// <summary>
+/// Class UnauthorizedException.
+/// Implements the <see cref="GermanArbeitsamtJobsearchClient.ApiException" />
+/// </summary>
+/// <seealso cref="GermanArbeitsamtJobsearchClient.ApiException" />
 public class UnauthorizedException : ApiException
 {
+  /// <summary>
+  /// Initializes a new instance of the <see cref="UnauthorizedException"/> class.
+  /// </summary>
+  /// <param name="status">The status.</param>
+  /// <param name="reason">The reason.</param>
+  /// <param name="httpResp">The HTTP resp.</param>
   public UnauthorizedException(int? status = null, string? reason = null, HttpResponseMessage? httpResp = null)
       : base(status, reason, httpResp) { }
 }
 
+/// <summary>
+/// Class ForbiddenException.
+/// Implements the <see cref="GermanArbeitsamtJobsearchClient.ApiException" />
+/// </summary>
+/// <seealso cref="GermanArbeitsamtJobsearchClient.ApiException" />
 public class ForbiddenException : ApiException
 {
+  /// <summary>
+  /// Initializes a new instance of the <see cref="ForbiddenException"/> class.
+  /// </summary>
+  /// <param name="status">The status.</param>
+  /// <param name="reason">The reason.</param>
+  /// <param name="httpResp">The HTTP resp.</param>
   public ForbiddenException(int? status = null, string? reason = null, HttpResponseMessage? httpResp = null)
       : base(status, reason, httpResp) { }
 }
 
+/// <summary>
+/// Class ServiceException.
+/// Implements the <see cref="GermanArbeitsamtJobsearchClient.ApiException" />
+/// </summary>
+/// <seealso cref="GermanArbeitsamtJobsearchClient.ApiException" />
 public class ServiceException : ApiException
 {
+  /// <summary>
+  /// Initializes a new instance of the <see cref="ServiceException"/> class.
+  /// </summary>
+  /// <param name="status">The status.</param>
+  /// <param name="reason">The reason.</param>
+  /// <param name="httpResp">The HTTP resp.</param>
   public ServiceException(int? status = null, string? reason = null, HttpResponseMessage? httpResp = null)
       : base(status, reason, httpResp) { }
 }

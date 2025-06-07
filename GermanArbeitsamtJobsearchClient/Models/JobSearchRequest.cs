@@ -19,20 +19,92 @@
 
 namespace GermanArbeitsamtJobsearchClient.Models;
 
+/// <summary>
+/// Class JobSearchRequest.
+/// </summary>
 public class JobSearchRequest
 {
-  public string Was { get; set; } // Exapmple: "Softwareentwickler"
-  public string Wo { get; set; } // Example: "Berlin"
-  public string Berufsfeld { get; set; } // Example: "Informatics"
-  public int Page { get; set; } // Example: "1"
-  public int Size { get; set; } // Example: "10"
-  public string Arbeitgeber { get; set; } // Example: "Deutsche%Telekom%AG"
-  public int VeroeffentlichtSeit { get; set; } // Example: "7" (days)
-  public bool Zeitarbeit { get; set; } // Example: true (if you want to include temporary jobs)
-  public int Angebotsart { get; set; } // Example: 1 (1 for "Arbeit", 2 for "Selbststaendigkeit", 4 for "Ausbildungen", 34 for "Praktikum/Trainee")
-  public int Befristung { get; set; } // Example: 0 (1 for "befristet", 2 for "unbefristet")
-  public string Arbeitszeit { get; set; } // Example: (vz for "Vollzeit", tz for "Teilzeit", snw for "Schicht/Nachtarbeit", ho for "Homeoffice")
-  public bool Behinderung { get; set; } // Example: false (if you want to include jobs for people with disabilities)
-  public bool Corona { get; set; } // Example: false (if you want to include jobs related to Corona)
-  public int Umkreis { get; set; } // Example: 25 (distance in km from the location specified in "Wo")
+  /// <summary>
+  /// Gets or sets the was. Exapmple: "Softwareentwickler"
+  /// </summary>
+  /// <value>The was.</value>
+  public string Was { get; set; } = string.Empty;
+
+  /// <summary>
+  /// Gets or sets the wo. Example: "Berlin"
+  /// </summary>
+  /// <value>The wo.</value>
+  public string Wo { get; set; } = string.Empty;
+
+  /// <summary>
+  /// Gets or sets the berufsfeld. Example: "Informatik"
+  /// </summary>
+  /// <value>The berufsfeld.</value>
+  public string Berufsfeld { get; set; } = string.Empty;
+
+  /// <summary>
+  /// Gets or sets the page. Example: "1"
+  /// </summary>
+  /// <value>The page.</value>
+  public int Page { get; set; }
+
+  /// <summary>
+  /// Gets or sets the size. Example: "10"
+  /// </summary>
+  /// <value>The size.</value>
+  public int Size { get; set; }
+
+  /// <summary>
+  /// Gets or sets the arbeitgeber. Example: "Deutsche%Telekom%AG"
+  /// </summary>
+  /// <value>The arbeitgeber.</value>
+  public string Arbeitgeber { get; set; } = string.Empty;
+
+  /// <summary>
+  /// Gets or sets the veroeffentlicht seit. Example: "7" (days)
+  /// </summary>
+  /// <value>The veroeffentlicht seit.</value>
+  public int VeroeffentlichtSeit { get; set; }
+
+  /// <summary>
+  /// Gets or sets a value indicating whether this <see cref="JobSearchRequest"/> is zeitarbeit.
+  /// </summary>
+  /// <value><c>true</c> if zeitarbeit; otherwise, <c>false</c>.</value>
+  public bool Zeitarbeit { get; set; }
+
+  /// <summary>
+  /// Gets or sets the angebotsart. Example: 1 (1 for "Arbeit", 2 for "Selbststaendigkeit", 4 for "Ausbildungen", 34 for "Praktikum/Trainee")
+  /// </summary>
+  /// <value>The angebotsart.</value>
+  public int Angebotsart { get; set; }
+
+  /// <summary>
+  /// Gets or sets the befristung. Example: 0 (1 for "befristet", 2 for "unbefristet")
+  /// </summary>
+  /// <value>The befristung.</value>
+  public int Befristung { get; set; }
+
+  /// <summary>
+  /// Gets or sets the arbeitszeit. // Example: (vz for "Vollzeit", tz for "Teilzeit", snw for "Schicht/Nachtarbeit", ho for "Homeoffice")
+  /// </summary>
+  /// <value>The arbeitszeit.</value>
+  public string Arbeitszeit { get; set; } = string.Empty;
+
+  /// <summary>
+  /// Gets or sets a value indicating whether this <see cref="JobSearchRequest"/> is behinderung. Example: false (if you want to include jobs for people with disabilities)
+  /// </summary>
+  /// <value><c>true</c> if behinderung; otherwise, <c>false</c>.</value>
+  public bool Behinderung { get; set; }
+
+  /// <summary>
+  /// Gets or sets a value indicating whether this <see cref="JobSearchRequest"/> is corona. Example: false (if you want to include jobs related to Corona)
+  /// </summary>
+  /// <value><c>true</c> if corona; otherwise, <c>false</c>.</value>
+  public bool Corona { get; set; }
+
+  /// <summary>
+  /// Gets or sets the umkreis. Example: 25 (distance in km from the location specified in "Wo")
+  /// </summary>
+  /// <value>The umkreis.</value>
+  public int Umkreis { get; set; }
 }
