@@ -31,7 +31,7 @@ public class Jobsuche
   /// <summary>
   /// The endpoint
   /// </summary>
-  private string _endpoint = "/pc/v4/jobsuche";
+  private readonly string _endpoint = "/pc/v4/jobsuche";
 
   /// <summary>
   /// Send request as an asynchronous operation.

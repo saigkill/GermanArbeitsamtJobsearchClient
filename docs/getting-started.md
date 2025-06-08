@@ -23,7 +23,7 @@ private JobSearchResponse SendJobSearchRequest(JobSearchRequest request)
     Berufsfeld = "Informatik",
     Page = 1,
     Size = 10,
-    Arbeitgeber = "Deutsche Telekom AG",
+    Arbeitgeber = "Deutsche%20Bahn%20AG",
     VeroeffentlichtSeit = 7,         // Jobs der letzten 7 Tage
     Zeitarbeit = false,
     Angebotsart = 1,                 // 1 = Arbeit
@@ -41,3 +41,5 @@ var ergebnis = await ApiRequest.SendAsync<JobSearchResponse>(
     );
 }
 ```
+
+All example entries can be found in the Model files.

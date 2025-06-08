@@ -46,7 +46,7 @@ public class OpenApiException : Exception
 /// <summary>
 /// Exception für Typfehler.
 /// </summary>
-public class ApiTypeError : OpenApiException
+public class ApiTypeErrorException : OpenApiException
 {
   /// <summary>
   /// Gets the path to item.
@@ -67,13 +67,13 @@ public class ApiTypeError : OpenApiException
   public bool? KeyType { get; }
 
   /// <summary>
-  /// Initializes a new instance of the <see cref="ApiTypeError"/> class.
+  /// Initializes a new instance of the <see cref="ApiTypeErrorException"/> class.
   /// </summary>
   /// <param name="message">The message.</param>
   /// <param name="pathToItem">The path to item.</param>
   /// <param name="validClasses">The valid classes.</param>
   /// <param name="keyType">if set to <c>true</c> [key type].</param>
-  public ApiTypeError(string message, IList<object>? pathToItem = null, Type[]? validClasses = null, bool? keyType = null)
+  public ApiTypeErrorException(string message, IList<object>? pathToItem = null, Type[]? validClasses = null, bool? keyType = null)
       : base(FormatMessage(message, pathToItem))
   {
     PathToItem = pathToItem;
@@ -98,7 +98,7 @@ public class ApiTypeError : OpenApiException
 /// <summary>
 /// Exception für ungültige Werte.
 /// </summary>
-public class ApiValueError : OpenApiException
+public class ApiValueErrorException : OpenApiException
 {
   /// <summary>
   /// Gets the path to item.
@@ -107,11 +107,11 @@ public class ApiValueError : OpenApiException
   public IList<object>? PathToItem { get; }
 
   /// <summary>
-  /// Initializes a new instance of the <see cref="ApiValueError"/> class.
+  /// Initializes a new instance of the <see cref="ApiValueErrorException"/> class.
   /// </summary>
   /// <param name="message">The message.</param>
   /// <param name="pathToItem">The path to item.</param>
-  public ApiValueError(string message, IList<object>? pathToItem = null)
+  public ApiValueErrorException(string message, IList<object>? pathToItem = null)
       : base(FormatMessage(message, pathToItem))
   {
     PathToItem = pathToItem;
@@ -134,7 +134,7 @@ public class ApiValueError : OpenApiException
 /// <summary>
 /// Exception für Attributfehler.
 /// </summary>
-public class ApiAttributeError : OpenApiException
+public class ApiAttributeErrorException : OpenApiException
 {
   /// <summary>
   /// Gets the path to item.
@@ -143,11 +143,11 @@ public class ApiAttributeError : OpenApiException
   public IList<object>? PathToItem { get; }
 
   /// <summary>
-  /// Initializes a new instance of the <see cref="ApiAttributeError"/> class.
+  /// Initializes a new instance of the <see cref="ApiAttributeErrorException"/> class.
   /// </summary>
   /// <param name="message">The message.</param>
   /// <param name="pathToItem">The path to item.</param>
-  public ApiAttributeError(string message, IList<object>? pathToItem = null)
+  public ApiAttributeErrorException(string message, IList<object>? pathToItem = null)
       : base(FormatMessage(message, pathToItem))
   {
     PathToItem = pathToItem;
@@ -170,7 +170,7 @@ public class ApiAttributeError : OpenApiException
 /// <summary>
 /// Exception für Key-Fehler.
 /// </summary>
-public class ApiKeyError : OpenApiException
+public class ApiKeyErrorException : OpenApiException
 {
   /// <summary>
   /// Gets the path to item.
@@ -179,11 +179,11 @@ public class ApiKeyError : OpenApiException
   public IList<object>? PathToItem { get; }
 
   /// <summary>
-  /// Initializes a new instance of the <see cref="ApiKeyError"/> class.
+  /// Initializes a new instance of the <see cref="ApiKeyErrorException"/> class.
   /// </summary>
   /// <param name="message">The message.</param>
   /// <param name="pathToItem">The path to item.</param>
-  public ApiKeyError(string message, IList<object>? pathToItem = null)
+  public ApiKeyErrorException(string message, IList<object>? pathToItem = null)
       : base(FormatMessage(message, pathToItem))
   {
     PathToItem = pathToItem;
