@@ -17,6 +17,8 @@
 // THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // </copyright>
 
+using System.Text;
+
 namespace GermanArbeitsamtJobsearchClient;
 
 /// <summary>
@@ -31,14 +33,14 @@ public static class ExceptionUtils
   /// <returns>System.String.</returns>
   public static string RenderPath(IList<object> pathToItem)
   {
-    var result = "";
+    var result = new StringBuilder();
     foreach (var p in pathToItem)
     {
       if (p is int i)
-        result += $"[{i}]";
+        result.Append($"[{i}]");
       else
-        result += $"['{p}']";
+        result.Append($"['{p}']");
     }
-    return result;
+    return result.ToString();
   }
 }
