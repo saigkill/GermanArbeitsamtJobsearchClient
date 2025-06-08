@@ -4,7 +4,7 @@
     {
       "src": [
         {
-          "src": "../.",
+          "src": "../src",
           "files": [
             "**/*.csproj"
           ]
@@ -40,7 +40,7 @@
       "_appName": "GermanArbeitsamtJobsearchClient",
       "_appTitle": "GermanArbeitsamtJobsearchClient",
       "_enableSearch": true,
-      "pdf": true
+      "pdf": false
     }
   }
 }
