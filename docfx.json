@@ -4,7 +4,7 @@
     {
       "src": [
         {
-          "src": "../src",
+          "src": "src",
           "files": [
             "**/*.csproj"
           ]
@@ -22,7 +22,8 @@
         "exclude": [
           "_site/**"
         ]
-      }
+      },
+
     ],
     "resource": [
       {

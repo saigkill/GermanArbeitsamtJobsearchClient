@@ -28,31 +28,31 @@ public class JobSearchResponse
   /// Gets or sets the stellenangebote.
   /// </summary>
   /// <value>The stellenangebote.</value>
-  public List<JobSearchOffer>? Stellenangebote { get; set; }
+  public List<JobSearchOffer>? Stellenangebote { get; set; } = new List<JobSearchOffer>();
 
   /// <summary>
   /// Gets or sets the maximum ergebnisse.
   /// </summary>
   /// <value>The maximum ergebnisse.</value>
-  public string? MaxErgebnisse { get; set; }
+  public string? MaxErgebnisse { get; set; } = string.Empty;
 
   /// <summary>
   /// Gets or sets the page.
   /// </summary>
   /// <value>The page.</value>
-  public string? Page { get; set; }
+  public string? Page { get; set; } = string.Empty;
 
   /// <summary>
   /// Gets or sets the size.
   /// </summary>
   /// <value>The size.</value>
-  public string? Size { get; set; }
+  public string? Size { get; set; } = string.Empty;
 
   /// <summary>
   /// Gets or sets the facetten.
   /// </summary>
   /// <value>The facetten.</value>
-  public List<JobFacet>? Facetten { get; set; }
+  public List<JobFacet>? Facetten { get; set; } = new List<JobFacet>();
 }
 
 /// <summary>
@@ -64,49 +64,49 @@ public class JobSearchOffer
   /// Gets or sets the hash identifier. Example: "WBTAiM10b25rJgZqiLhVIHzAF9e0rnV_DXdsRZtlb54="
   /// </summary>
   /// <value>The hash identifier.</value>
-  public string? HashId { get; set; }
+  public string? HashId { get; set; } = string.Empty;
 
   /// <summary>
   /// Gets or sets the beruf. Example: "Software-Entwickler/in"
   /// </summary>
   /// <value>The beruf.</value>
-  public string? Beruf { get; set; }
+  public string? Beruf { get; set; } = string.Empty;
 
   /// <summary>
   /// Gets or sets the reference nr. Example: "10000-1184867112-S"
   /// </summary>
   /// <value>The reference nr.</value>
-  public string? RefNr { get; set; }
+  public string? RefNr { get; set; } = string.Empty;
 
   /// <summary>
   /// Gets or sets the arbeitgeber. Example: "Oltermann Sicherheits- und Elektrotechnik GmbH"
   /// </summary>
   /// <value>The arbeitgeber.</value>
-  public string? Arbeitgeber { get; set; }
+  public string? Arbeitgeber { get; set; } = string.Empty;
 
   /// <summary>
   /// Gets or sets the aktuelle veroeffentlichungsdatum.
   /// </summary>
   /// <value>The aktuelle veroeffentlichungsdatum.</value>
-  public DateTime? AktuelleVeroeffentlichungsdatum { get; set; }
+  public DateTime? AktuelleVeroeffentlichungsdatum { get; set; } = DateTime.UtcNow;
 
   /// <summary>
   /// Gets or sets the eintrittsdatum.
   /// </summary>
   /// <value>The eintrittsdatum.</value>
-  public DateTime? Eintrittsdatum { get; set; }
+  public DateTime? Eintrittsdatum { get; set; } = DateTime.UtcNow;
 
   /// <summary>
   /// Gets or sets the arbeitsort.
   /// </summary>
   /// <value>The arbeitsort.</value>
-  public Arbeitsort? Arbeitsort { get; set; }
+  public Arbeitsort? Arbeitsort { get; set; } = new Arbeitsort();
 
   /// <summary>
   /// Gets or sets the modifikations timestamp.
   /// </summary>
   /// <value>The modifikations timestamp.</value>
-  public string? ModifikationsTimestamp { get; set; }
+  public string? ModifikationsTimestamp { get; set; } = string.Empty;
 }
 
 /// <summary>
@@ -118,37 +118,37 @@ public class Arbeitsort
   /// Gets or sets the land.
   /// </summary>
   /// <value>The land.</value>
-  public string? Land { get; set; }
+  public string? Land { get; set; } = string.Empty;
 
   /// <summary>
   /// Gets or sets the region.
   /// </summary>
   /// <value>The region.</value>
-  public string? Region { get; set; }
+  public string? Region { get; set; } = string.Empty;
 
   /// <summary>
   /// Gets or sets the PLZ.
   /// </summary>
   /// <value>The PLZ.</value>
-  public string? Plz { get; set; }
+  public string? Plz { get; set; } = string.Empty;
 
   /// <summary>
   /// Gets or sets the ort.
   /// </summary>
   /// <value>The ort.</value>
-  public string? Ort { get; set; }
+  public string? Ort { get; set; } = string.Empty;
 
   /// <summary>
   /// Gets or sets the strasse.
   /// </summary>
   /// <value>The strasse.</value>
-  public string? Strasse { get; set; }
+  public string? Strasse { get; set; } = string.Empty;
 
   /// <summary>
   /// Gets or sets the strasse hausnummer.
   /// </summary>
   /// <value>The strasse hausnummer.</value>
-  public string? StrasseHausnummer { get; set; }
+  public string? StrasseHausnummer { get; set; } = string.Empty;
 }
 
 /// <summary>
@@ -262,11 +262,11 @@ public class FacetCounts
   /// Gets or sets the counts.
   /// </summary>
   /// <value>The counts.</value>
-  public Dictionary<string, int>? Counts { get; set; }
+  public Dictionary<string, int>? Counts { get; set; } = new Dictionary<string, int>();
 
   /// <summary>
   /// Gets or sets the maximum count.
   /// </summary>
   /// <value>The maximum count.</value>
-  public int? MaxCount { get; set; }
+  public int? MaxCount { get; set; } = null;
 }
