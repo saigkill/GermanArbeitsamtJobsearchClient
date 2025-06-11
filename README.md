@@ -9,10 +9,10 @@ GermanArbeitsamtJobsearchClient is released under the MIT License, see the file 
 
 |What|Where|
 |-----|-------------------------------------------------------------------------------------|
-|Code  | (https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient) |
-|Docs | (https://moongladesm.blob.core.windows.net/arbeitsamt-docs/_site/index.html) |
-|Bugs & feature requests Azure  | (https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient/_workitems/recentlyupdated/) |
-|Bugs & feature requests Github | (https://github.com/saigkill/GermanArbeitsamtJobsearchClient/issues) |
+|Code  | https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient |
+|Docs | https://moongladesm.blob.core.windows.net/arbeitsamt-docs/_site/index.html |
+|Bugs & feature requests Azure  | https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient/_workitems/recentlyupdated/ |
+|Bugs & feature requests Github | https://github.com/saigkill/GermanArbeitsamtJobsearchClient/issues |
 
 | What | Status |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -30,36 +30,36 @@ GermanArbeitsamtJobsearchClient is released under the MIT License, see the file 
 ## Prerequisites
 
 Install the nuget package: "Saigkill.GermanArbeitsamtJobsearch" Client, and add it to your project.
+You can find the package here: [Azure Artifacts](https://pkgs.dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient/_packaging/GermanArbeitsamatJobsearchClient-Prod/nuget/v3/index.json).
 
 ## Usage
 ```csharp
 using GermanArbeitsamtJobsearchClient.Models;
 
-private JobSearchResponse SendJobSearchRequest(JobSearchRequest request)
-{
+// Your example class
+public async Task GetJobs(){
+    
+    //Define your model
     var request = new JobSearchRequest
-{
-    Was = "Softwareentwickler",
-    Wo = "Berlin",
-    Berufsfeld = "Informatik",
-    Page = 1,
-    Size = 10,
-    Arbeitgeber = "Deutsche%20Bahn%20AG",
-    VeroeffentlichtSeit = 7,         // Jobs der letzten 7 Tage
-    Zeitarbeit = false,
-    Angebotsart = 1,                 // 1 = Arbeit
-    Befristung = 0,                  // 0 = alle, 1 = befristet, 2 = unbefristet
-    Arbeitszeit = "vz",              // vz = Vollzeit
-    Behinderung = false,
-    Corona = false,
-    Umkreis = 25                     // 25 km Umkreis
-};
+    {
+       Was = "Softwareentwickler",
+       Wo = "Berlin",
+       Berufsfeld = "Informatik",
+       Page = 1,
+       Size = 10,
+       Arbeitgeber = "Deutsche%20Bahn%20AG",
+       VeroeffentlichtSeit = 7,         // Jobs der letzten 7 Tage
+       Zeitarbeit = false,
+       Angebotsart = 1,                 // 1 = Arbeit
+       Befristung = 0,                  // 0 = alle, 1 = befristet, 2 = unbefristet
+       Arbeitszeit = "vz",              // vz = Vollzeit
+       Behinderung = false,
+       Corona = false,
+       Umkreis = 25                     // 25 km Umkreis
+     };
 
-var ergebnis = await ApiRequest.SendAsync<JobSearchResponse>(
-      resource: _endpoint,
-      method: Method.Get,
-      parameters: parameters
-    );
+    var jobs = await SendJobSearchRequest(request);
+    // Do something with the jobs, e.g. display them in a list or save them to a database
 }
 ```
 

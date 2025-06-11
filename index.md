@@ -4,8 +4,8 @@ _layout: landing
 
 # This is the **HOMEPAGE**.
 
-Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to write markdown files.
+This is the Documentation for GermanArbeitsamtJobsearchClient, a C# .NET client for the German Arbeitsamt Job Search API.
 
-## Quick Start Notes:
+It provides a simple way to access job listings, search for jobs, and retrieve detailed information about specific job postings.
 
-1. Add images to the *images* folder if the file is referencing an image.
+You can click in the menu to go to the docs or the api reference.

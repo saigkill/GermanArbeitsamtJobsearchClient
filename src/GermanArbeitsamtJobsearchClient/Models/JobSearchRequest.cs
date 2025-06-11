@@ -39,72 +39,72 @@ public class JobSearchRequest
   /// <summary>
   /// Gets or sets the berufsfeld. Example: "Informatik"
   /// </summary>
-  /// <value>The berufsfeld.</value>
+  /// <value>The Berufsfeld.</value>
   public string Berufsfeld { get; set; } = string.Empty;
 
   /// <summary>
   /// Gets or sets the page. Example: "1"
   /// </summary>
-  /// <value>The page.</value>
-  public int Page { get; set; }
+  /// <value>How many pages.</value>
+  public int Page { get; set; } = 1;
 
   /// <summary>
   /// Gets or sets the size. Example: "10"
   /// </summary>
-  /// <value>The size.</value>
-  public int Size { get; set; }
+  /// <value>The Size.</value>
+  public int Size { get; set; } = 10;
 
   /// <summary>
   /// Gets or sets the arbeitgeber. Example: "Deutsche%Telekom%AG"
   /// </summary>
-  /// <value>The arbeitgeber.</value>
+  /// <value>The Arbeitgeber.</value>
   public string Arbeitgeber { get; set; } = string.Empty;
 
   /// <summary>
   /// Gets or sets the veroeffentlicht seit. Example: "7" (days)
   /// </summary>
-  /// <value>The veroeffentlicht seit.</value>
-  public int VeroeffentlichtSeit { get; set; }
+  /// <value>The VeroeffentlichtSeit.</value>
+  public int VeroeffentlichtSeit { get; set; } = 0;
 
   /// <summary>
   /// Gets or sets a value indicating whether this <see cref="JobSearchRequest"/> is zeitarbeit.
   /// </summary>
-  /// <value><c>true</c> if zeitarbeit; otherwise, <c>false</c>.</value>
-  public bool Zeitarbeit { get; set; }
+  /// <value><c>false</c> is default <c>true</c> if Zeitarbeit; otherwise, <c>false</c>.</value>
+  public bool Zeitarbeit { get; set; } = false;
 
   /// <summary>
   /// Gets or sets the angebotsart. Example: 1 (1 for "Arbeit", 2 for "Selbststaendigkeit", 4 for "Ausbildungen", 34 for "Praktikum/Trainee")
   /// </summary>
-  /// <value>The angebotsart.</value>
-  public int Angebotsart { get; set; }
+  /// <value>The Angebotsart.</value>
+  public int Angebotsart { get; set; } = 1;
 
   /// <summary>
   /// Gets or sets the befristung. Example: 0 (1 for "befristet", 2 for "unbefristet")
   /// </summary>
-  /// <value>The befristung.</value>
-  public int Befristung { get; set; }
+  /// <value>The Befristung.</value>
+  public int Befristung { get; set; } = 0;
 
   /// <summary>
   /// Gets or sets the arbeitszeit. // Example: (vz for "Vollzeit", tz for "Teilzeit", snw for "Schicht/Nachtarbeit", ho for "Homeoffice")
   /// </summary>
-  /// <value>The arbeitszeit.</value>
+  /// <value>The Arbeitszeit.</value>
   public string Arbeitszeit { get; set; } = string.Empty;
 
   /// <summary>
   /// Gets or sets a value indicating whether this <see cref="JobSearchRequest"/> is behinderung. Example: false (if you want to include jobs for people with disabilities)
   /// </summary>
-  /// <value><c>true</c> if behinderung; otherwise, <c>false</c>.</value>
-  public bool Behinderung { get; set; }
+  /// <value><c>false</c> is default. <c>true</c> if behinderung; otherwise, <c>false</c>.</value>
+  public bool Behinderung { get; set; } = false;
 
   /// <summary>
   /// Gets or sets a value indicating whether this <see cref="JobSearchRequest"/> is corona. Example: false (if you want to include jobs related to Corona)
   /// </summary>
-  /// <value><c>true</c> if corona; otherwise, <c>false</c>.</value>
-  public bool Corona { get; set; }
+  /// <value><c>false</c> is default. <c>true</c> if corona; otherwise, <c>false</c>.</value>
+  public bool Corona { get; set; } = false;
 
   /// <summary>
   /// Gets or sets the umkreis. Example: 25 (distance in km from the location specified in "Wo")
   /// </summary>
-  /// <value>The umkreis.</value>
-  public int Umkreis { get; set; }
+  /// <value>The Umkreis.</value>
+  public int Umkreis { get; set; } = 0;
 }
