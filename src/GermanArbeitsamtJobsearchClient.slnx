@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="GermanArbeitsamtJobsearchClient/GermanArbeitsamtJobsearchClient.csproj" />
+  <Project Path="GermanArbeitsamtJobsearchClientTests/GermanArbeitsamtJobsearchClientTests.csproj" />
+</Solution>
