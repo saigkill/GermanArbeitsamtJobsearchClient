@@ -12,11 +12,11 @@ GermanArbeitsamtJobsearchClient is released under the LGPL License, see the file
 |Docs | [https://writebook.saschamanns.de/3/german-arbeitsamt-jobsearch-client](https://writebook.saschamanns.de/3/german-arbeitsamt-jobsearch-client) |
 |Bugs & feature requests | [https://github.com/saigkill/GermanArbeitsamtJobsearchClient/issues](https://github.com/saigkill/GermanArbeitsamtJobsearchClient/issues)       |
 
-| What | Status |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Continuous integration Dev | [![Build status](https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient/_apis/build/status/GermanArbeitsamtJobsearchClient-.NET%20Desktop-CI-stage)](https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient/_build/latest?definitionId=72) |
-|Continuous integration Prod | [![Build status](https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient/_apis/build/status/GermanArbeitsamtJobsearchClient-ASP.NET-CI-prod)](https://dev.azure.com/saigkill/GermanArbeitsamtJobsearchClient/_build/latest?definitionId=-1) |
-|Open Issues Github | ![GitHub issues](https://img.shields.io/github/issues/saigkill/GermanArbeitsamtJobsearchClient) |
+| What | Status                                                                                                                                                                                                                          |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Continuous integration Dev | [![.NET Develop](https://github.com/saigkill/GermanArbeitsamtJobsearchClient/actions/workflows/dotnet-develop.yml/badge.svg)](https://github.com/saigkill/GermanArbeitsamtJobsearchClient/actions/workflows/dotnet-develop.yml) |
+|Continuous integration Prod | [![.NET Develop](https://github.com/saigkill/GermanArbeitsamtJobsearchClient/actions/workflows/dotnet-release.yml/badge.svg)](https://github.com/saigkill/GermanArbeitsamtJobsearchClient/actions/workflows/dotnet-release.yml) |
+|Open Issues Github | ![GitHub issues](https://img.shields.io/github/issues/saigkill/GermanArbeitsamtJobsearchClient)                                                                                                                                 |
 
 ## FEATURES
 

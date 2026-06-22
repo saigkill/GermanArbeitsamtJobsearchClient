@@ -32,13 +32,13 @@ jobs:
           dotnet-version: 10.0.x
 
       - name: Restore dependencies
-        run: dotnet restore src/adr-tool.slnx
+        run: dotnet restore src/GermanArbeitsamtJobsearchClient.slnx
 
       - name: Build
-        run: dotnet build src/adr-tool.slnx --configuration ${{ env.BUILD_CONFIGURATION }} --no-restore
+        run: dotnet build src/GermanArbeitsamtJobsearchClient.slnx --configuration ${{ env.BUILD_CONFIGURATION }} --no-restore
 
       - name: Test
-        run: dotnet test src/adr-tool.slnx --configuration ${{ env.BUILD_CONFIGURATION }} --no-build --verbosity normal --collect:"XPlat Code Coverage" --logger:"junit;LogFilePath=./TestResults/junit.xml" /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura --results-directory ./TestResults
+        run: dotnet test src/GermanArbeitsamtJobsearchClient.slnx --configuration ${{ env.BUILD_CONFIGURATION }} --no-build --verbosity normal --collect:"XPlat Code Coverage" --logger:"junit;LogFilePath=./TestResults/junit.xml" /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura --results-directory ./TestResults
 
       - name: Publish Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2
@@ -69,7 +69,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Pack
-        run: dotnet pack src/adr-tool.slnx --configuration ${{ env.BUILD_CONFIGURATION }} --output ./nupkgs
+        run: dotnet pack src/GermanArbeitsamtJobsearchClient.slnx --configuration ${{ env.BUILD_CONFIGURATION }} --output ./nupkgs
 
       - name: Push to NuGet.org
         run: dotnet nuget push ./nupkgs/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
