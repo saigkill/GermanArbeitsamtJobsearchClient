@@ -31,13 +31,13 @@ jobs:
         with:
           dotnet-version: 10.0.x
       - name: Restore dependencies
-        run: dotnet restore src/adr-tool.slnx
+        run: dotnet restore src/GermanArbeitsamtJobsearchClient.slnx
       - name: Build
-        run: dotnet build src/adr-tool.slnx --no-restore --configuration ${{ env.BUILD_CONFIGURATION }}
+        run: dotnet build src/GermanArbeitsamtJobsearchClient.slnx --no-restore --configuration ${{ env.BUILD_CONFIGURATION }}
       - name: Test
-        run: dotnet test src/adr-tool.slnx --no-build --verbosity normal --collect:"XPlat Code Coverage" --logger:"junit;LogFilePath=junit.xml" /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura --results-directory ./TestResults --configuration ${{ env.BUILD_CONFIGURATION }}
+        run: dotnet test src/GermanArbeitsamtJobsearchClient.slnx --no-build --verbosity normal --collect:"XPlat Code Coverage" --logger:"junit;LogFilePath=junit.xml" /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura --results-directory ./TestResults --configuration ${{ env.BUILD_CONFIGURATION }}
       - name: Pack
-        run: dotnet pack src/adr-tool.slnx --configuration ${{ env.BUILD_CONFIGURATION }}
+        run: dotnet pack src/GermanArbeitsamtJobsearchClient.slnx --configuration ${{ env.BUILD_CONFIGURATION }}
       - name: Run Codacy Analysis CLI
         uses: codacy/codacy-analysis-cli-action@master
       - name: Publish Test Results
