@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ae666c2d-dd39-4520-a9c3-abb8d00d4063" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="7" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="release/v1.2.1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;saigkill&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/saigkill/GermanArbeitsamtJobsearchClient.git&quot;,
+    &quot;accountId&quot;: &quot;55a238d8-bf0b-48f2-a6fa-14013b441b75&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000019633983" />
+      <entry key="S2" value="1.0066565944927723" />
+      <entry key="S5" value="1.1346792969234376" />
+      <entry key="S10" value="1.3669867803115496" />
+      <entry key="S30" value="1.7159512859037016" />
+      <entry key="S60" value="1.8461524639123006" />
+      <entry key="M2" value="1.9282544013735223" />
+      <entry key="M5" value="2.4172746797880786" />
+      <entry key="M10" value="3.739792034597725" />
+      <entry key="M15" value="4.7667661775011" />
+      <entry key="M30" value="6.398572662736918" />
+      <entry key="H1" value="7.547840072630642" />
+      <entry key="H2" value="8.231438655041003" />
+      <entry key="H4" value="8.604459025042775" />
+      <entry key="D1" value="8.932455067561078" />
+      <entry key="W1" value="8.990310242925094" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9659363289248456" />
+      <entry key="MS500" value="0.9930924973626957" />
+      <entry key="S2" value="1.004893007321089" />
+      <entry key="S5" value="1.133725256191765" />
+      <entry key="S10" value="1.3662843133156797" />
+      <entry key="S30" value="1.7156042176775355" />
+      <entry key="S60" value="1.8459578634328697" />
+      <entry key="M2" value="1.9281506710547012" />
+      <entry key="M5" value="2.417218531200252" />
+      <entry key="M10" value="3.739741126794587" />
+      <entry key="M15" value="4.766719569724552" />
+      <entry key="M30" value="6.3985388698675365" />
+      <entry key="H1" value="7.547819371552279" />
+      <entry key="H2" value="8.231427155805811" />
+      <entry key="H4" value="8.604452959631566" />
+      <entry key="D1" value="8.932454010163028" />
+      <entry key="W1" value="8.990310090693695" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3FSn2eqj3POZ8AZlR6iqSsWm02Z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae666c2d-dd39-4520-a9c3-abb8d00d4063" name="Changes" comment="" />
+      <created>1782077132349</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782077132349</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Migrate project from Azure DevOps to GitHub, update references, and restructure documentation.">
+      <option name="closed" value="true" />
+      <created>1782092015268</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1782092015268</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Remove obsolete solution file and update GitHub workflow to reference the correct project.">
+      <option name="closed" value="true" />
+      <created>1782092733373</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782092733373</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add new solution file for GermanArbeitsamtJobsearchClient">
+      <option name="closed" value="true" />
+      <created>1782093181065</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1782093181065</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update README badges and GitHub workflow to reference correct project and solution file.">
+      <option name="closed" value="true" />
+      <created>1782093798582</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782093798582</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Bump version to 1.2.1 in GermanArbeitsamtJobsearchClient.csproj">
+      <option name="closed" value="true" />
+      <created>1782094117762</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1782094117762</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Migrate project from Azure DevOps to GitHub, update references, and restructure documentation." />
+    <MESSAGE value="Remove obsolete solution file and update GitHub workflow to reference the correct project." />
+    <MESSAGE value="Add new solution file for GermanArbeitsamtJobsearchClient" />
+    <MESSAGE value="Update README badges and GitHub workflow to reference correct project and solution file." />
+    <MESSAGE value="Bump version to 1.2.1 in GermanArbeitsamtJobsearchClient.csproj" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bump version to 1.2.1 in GermanArbeitsamtJobsearchClient.csproj" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
